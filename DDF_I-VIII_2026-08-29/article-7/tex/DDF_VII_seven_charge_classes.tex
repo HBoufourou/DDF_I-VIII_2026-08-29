@@ -1,0 +1,101 @@
+\input{ddf-common}
+\graphicspath{{figures/}{../figures/}}
+\title{\textbf{The Dark Dimension Framework VII:\\ Seven charge classes, and two that are empty}}
+\author{Hicham Boufourou\\ \small\textit{Independent Researcher, Brussels, Belgium}\\ \small\texttt{hicham.boufourou@hotmail.com}}
+\seriesdate{VII}{Seven charge classes}
+\begin{document}\maketitle
+\begin{abstract}
+\noindent The reduction of the D8-brane action on the candidate geometry of Article~V carries a discrete symmetry of order 168, the automorphism group of the Fano plane, acting on seven points. This paper gives those seven points a physical reading. Identifying them with the classes of observable integer-charge states under $(Q,B,L)\bmod2$, we find that the Particle Data Group spectrum populates exactly five of the seven; the two empty classes both carry $B=1$ and $L=1$, differing by the parity of $Q$. We derive their quantum numbers, show that no known exotic hadron populates them, count the combinatorial landscape at sixty configurations each, give conservation-checked decay channels with thresholds near $2.4$~GeV, and state a search strategy for LHCb, CMS/ATLAS and Belle~II. \textbf{The test is asymmetric and we say so.} The symmetry allows the two classes; it does not require them to be occupied. A discovery would be a striking confirmation; a null result bounds the D8 dynamics scale and does not falsify the geometry. Every group-theoretic and combinatorial statement is verified by explicit construction in an accompanying script.
+\end{abstract}
+
+\section{Why seven, and why here}
+The parent series proposes that dark matter, dark energy and the radial-acceleration relation are three readings of one structure~\cite{DDF1}; Article~V embeds it in Type~I$'$ and finds an explicit candidate; Article~VI reads the D8 brane of that candidate as a wall carrying seven regions labelled by $\mathbb Z_2^3$~\cite{DDF6}. This paper asks a narrow question that follows: \emph{if the wall carries a seven-fold structure, does the observed particle spectrum know about it?}
+
+The answer turns on an elementary observation. The three additive quantum numbers that every observable state carries --- electric charge $Q$, baryon number $B$, lepton number $L$ --- can each be reduced modulo two, and the reduction lands in $\mathbb F_2^3$: eight vectors, one trivial and seven not. \textbf{Those seven are the points of the Fano plane}, the same object that labels the wall's regions in Article~VI. This is not a coincidence engineered after the fact; it is what happens to any three $\mathbb Z$-valued charges reduced mod two, and the question is only whether the observed spectrum fills the seven points uniformly or not. It does not.
+
+\section{The reduction modulo two}
+For an observable state set $(q,b,\ell)=(Q\bmod2,\,B\bmod2,\,L\bmod2)$. The trivial vector $(0,0,0)$ is populated by $\gamma$, $g$, $Z$, $\pi^0$ and every all-even state. The seven non-zero vectors are
+\begin{equation}
+(0,0,1),\ (0,1,0),\ (0,1,1),\ (1,0,0),\ (1,0,1),\ (1,1,0),\ (1,1,1).
+\end{equation}
+
+\paragraph{Two restrictions of scope, stated first.} The reduction applies to \emph{observable} states with integer charges, so confined quarks with fractional $Q$ are outside it and are not listed as a class. Baryons split by charge parity: even-$Q$ baryons ($n$, $\Lambda^0$, $\Sigma_c^{++}$) sit at $(0,1,0)$, odd-$Q$ baryons ($p$, $\Sigma^+$, $\Lambda_c^+$) at $(1,1,0)$. And the reduction applies to \emph{particle states} --- resonances, hadrons, leptons, bosons --- not to atomic or molecular bound states. Hydrogen has $(Q,B,L)=(0,1,1)$ and would fall in an empty class; but it is an electromagnetic bound state, not a pole of the S-matrix. \textbf{The prediction concerns genuine resonances only, and this exclusion is part of the statement rather than a repair of it.}
+
+\section{The Fano plane and its symmetries (derived)}
+$\mathrm{PG}(2,2)$ has seven points and seven lines of three points each; a line is a triple with $v_1\oplus v_2\oplus v_3=0$:
+\begin{align}
+L_1&:(0,0,1)\oplus(0,1,0)\oplus(0,1,1),\quad L_2:(0,0,1)\oplus(1,0,0)\oplus(1,0,1),\quad L_3:(0,0,1)\oplus(1,1,0)\oplus(1,1,1),\nonumber\\
+L_4&:(0,1,0)\oplus(1,0,0)\oplus(1,1,0),\quad L_5:(0,1,0)\oplus(1,0,1)\oplus(1,1,1),\quad L_6:(0,1,1)\oplus(1,0,0)\oplus(1,1,1),\nonumber\\
+L_7&:(0,1,1)\oplus(1,0,1)\oplus(1,1,0).
+\end{align}
+Each point lies on exactly three lines. The symmetry group is $\mathrm{GL}(3,2)$, of order $(2^3-1)(2^3-2)(2^3-4)=168$, acting transitively on points and on lines. \textbf{All of this is verified by explicit construction} --- the group is generated from two matrices, its order counted, its orbit on the points computed, the seven lines enumerated and the incidence checked --- rather than asserted.
+
+\paragraph{A structural remark that becomes the prediction.} Each empty class is the XOR of two populated ones: $(0,1,1)=(0,0,1)\oplus(0,1,0)$, a neutrino with an even-$Q$ baryon; $(1,1,1)=(0,0,1)\oplus(1,1,0)$, a neutrino with an odd-$Q$ baryon, or equivalently a charged lepton with an even-$Q$ baryon. \textbf{The lines of the Fano plane therefore dictate the composition of the missing states before any dynamics is invoked}: they are baryon--lepton configurations, and nothing else.
+
+\section{Five classes populated, two empty (observational fact)}
+\begin{figure}[h]\centering\includegraphics[width=.55\textwidth]{fig_fano}
+\caption{The Fano plane with its seven points labelled by $(Q,B,L)\bmod2$. Blue: populated by the PDG spectrum. Red: empty. The two empty points are $(0,1,1)$ and $(1,1,1)$, both with $B=1$, $L=1$; they lie on the same line $L_6$ together with $(1,0,0)$, and on $L_3$ and $L_7$ respectively.}\label{fig:fano}\end{figure}
+\begin{center}\small
+\begin{tabular}{lll}\toprule
+vector & populated & examples\\\midrule
+$(0,0,1)$ & yes & $\nu_e,\nu_\mu,\nu_\tau$\\
+$(0,1,0)$ & yes & $n,\Lambda^0,\Sigma_c^{++}$ (even-$Q$ baryons)\\
+$(0,1,1)$ & \textbf{no} & ---\\
+$(1,0,0)$ & yes & $\pi^+,K^+,W^+$\\
+$(1,0,1)$ & yes & $e^\pm,\mu^\pm,\tau^\pm$\\
+$(1,1,0)$ & yes & $p,\Sigma^+,\Lambda_c^+$ (odd-$Q$ baryons)\\
+$(1,1,1)$ & \textbf{no} & ---\\\bottomrule
+\end{tabular}
+\end{center}
+\textbf{The emptiness of two classes is an observational fact of the PDG, not a symmetry prohibition.} Exotic hadrons carry $L=0$ and cannot fill them; this was checked explicitly on $X(3872)$, $Z_c(3900)$, $P_c(4312)$, $T_{cc}$ and $Z_b(10610)$, none of which lands in an empty class.
+
+\section{The missing states}
+\subsection{Quantum numbers}
+$(0,1,1)$: $B=1$, $L=1$, $Q$ even. \quad $(1,1,1)$: $B=1$, $L=1$, $Q$ odd. Both are baryonic states carrying lepton number --- a combination the Standard Model produces only as a bound state (hydrogen, deuterium) and never as a resonance.
+
+\subsection{The combinatorial landscape (derived count)}
+A $B=1$, $L=1$ state is a baryon--lepton configuration. With the observed baryon charge multiplicities ($Q=+2$: 2, $Q=+1$: 5, $Q=0$: 8, $Q=-1$: 5) and three charged leptons and three neutrinos:
+\begin{align}
+(0,1,1):&\quad \ell^-B_{+1}\,(15)+\ell^-B_{-1}\,(15)+\nu B_0\,(24)+\nu B_{+2}\,(6)=60,\\
+(1,1,1):&\quad \ell^-B_0\,(24)+\ell^-B_{+2}\,(6)+\nu B_{+1}\,(15)+\nu B_{-1}\,(15)=60.
+\end{align}
+One hundred and twenty configurations in total. \textbf{The symmetry fixes the seven classes, not the number of states in each}; the testable claim is that at least one genuine resonance exists in each empty class.
+
+\subsection{Priority decay channels (conservation verified)}
+\begin{figure}[h]\centering\includegraphics[width=.9\textwidth]{fig_channels}
+\caption{The four priority channels with their thresholds --- sums of measured masses --- and the benchmark mass window. Red: class $(0,1,1)$, neutral final state. Blue: class $(1,1,1)$, charged final state.}\label{fig:ch}\end{figure}
+\begin{align}
+X^0_{(0,1,1)}&\to\Lambda_c^++\mu^-\ (2392~\text{MeV}),\qquad \Sigma_c^++e^-\ (2453~\text{MeV}),\\
+X^+_{(1,1,1)}&\to\Sigma_c^{++}+\mu^-\ (2560~\text{MeV}),\qquad \Xi_c^++e^-\ (2468~\text{MeV}).
+\end{align}
+Charge, baryon and lepton number are conserved in each channel; the thresholds are sums of PDG masses (Fig.~\ref{fig:ch}). Charmed baryons are chosen because their vertices are displaced and their reconstruction clean; the light-baryon channels ($p\,e^-$, $n\,\nu$) are kinematically open but swamped by background. \textbf{A benchmark mass window of $4$--$6$~GeV follows from a scaling assumption} --- that the D8 dynamics sets a scale a few times the charm threshold --- and is labelled as such.
+
+\subsection{Search strategy}
+\textbf{LHCb}: a resonance in $m(\Lambda_c^+\mu^-)$ or $m(\Sigma_c^{++}\mu^-)$ with vertex-displacement cuts, exploiting the existing charm-baryon triggers. The running searches \texttt{Lb\_baryon\_lepton\_spectrum\_v1/v2} (statistics in $m(\Lambda_c^+\mu^-)$ and $m(p\mu^-)$; reach to $6.05$ GeV through $m(\Xi_c^0\mu^-)$ and $m(\Omega_c^0\mu^-)$) are the live instruments of this strategy. \textbf{Declared gap:} these selections reach $X$ produced in beauty-hadron decays; \emph{prompt} $X$ production is not covered by this strategy and is left as an open channel of the search. \textbf{CMS and ATLAS}: $J/\psi$ plus lepton plus baryon final states, where the dimuon trigger gives a clean handle. \textbf{Belle~II}: $B\to X+K$ in the $e^+e^-$ environment, where the missing-mass technique tags the neutral channel.
+
+\section{Epistemic status, and the asymmetry of the test}
+\begin{center}\small
+\begin{tabular}{ll}\toprule
+element & status\\\midrule
+$\mathbb F_2^3$ classification, seven classes & derived (exact)\\
+$\mathrm{GL}(3,2)$ of order 168, transitive, seven lines, three per point & derived (verified by construction)\\
+composition of empty classes from the Fano lines & derived\\
+five populated, two empty & observational fact (PDG)\\
+no exotic hadron in an empty class & checked on five states\\
+landscape counts $60/60$ & derived (combinatorics)\\
+decay-channel conservation and thresholds & derived (verified)\\
+existence of a resonance in each empty class & \textbf{hypothesis}\\
+mass window $4$--$6$~GeV & benchmark assumption\\\bottomrule
+\end{tabular}
+\end{center}
+\textbf{The test is asymmetric, and readers should weight the two outcomes accordingly.} A discovery in either empty class would be a striking confirmation of the seven-fold structure. A null result would \emph{not} falsify the geometry: the symmetry permits the classes without requiring them to be occupied, so an absence bounds the scale of the D8 dynamics rather than refuting the Fano labelling. This is the honest shape of the claim, and it is stated here rather than left for a referee to find.
+
+\section{How this paper dies}
+\emph{(i)} If a genuine $B=1$, $L=1$ resonance is excluded up to the electroweak scale in both channels, the benchmark window is dead and the hypothesis loses its only quantitative content. \emph{(ii)} If an exotic hadron with $L\neq0$ is found and populates an empty class by an ordinary mechanism, the classification loses its predictive edge. \emph{(iii)} If the candidate geometry of Article~V is replaced by one whose reduction does not carry $\mathrm{GL}(3,2)$, the symmetry premise fails and this paper goes with it. \emph{(iv)} If the parent framework dies at $8.2\,\mu$m, this paper survives as an observation about the PDG spectrum --- five classes of seven populated --- but loses its motivation.
+
+
+\input{appendix-where}
+\toolsstatement
+\traceability{7}{The group construction, the class census, the landscape counts and the channel thresholds are produced by \texttt{scripts/fano.py}; the two figures by \texttt{scripts/figures.py}.}
+\bibliographystyle{unsrt}\bibliography{ddf-refs}
+\end{document}

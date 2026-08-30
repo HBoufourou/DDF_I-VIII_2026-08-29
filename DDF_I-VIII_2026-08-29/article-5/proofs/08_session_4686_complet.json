@@ -1,0 +1,216 @@
+{
+  "session": {
+    "date": "09/08/2026",
+    "candidat": "Id 4686 (AGHJN, Exemple 7 de arXiv:2606.10850)",
+    "objectif": "certifier les projections au vrai point LVS dans le cône de Kähler, puis fixer la position par le potentiel de boucles"
+  },
+
+  "geometrie": {
+    "h11": 5, "h21": 81, "chi": -152,
+    "structure": "dP7 dP7 K3 W W W",
+    "base": [1, 5, 6, 7, 8],
+    "SR_ideal": ["x1x2","x1x3","x1x5","x1x9","x2x3","x2x4","x2x8","x3x7","x5x8","x4x6x9","x4x6x7x8","x5x6x7x9"],
+    "classification_diviseurs": {
+      "base_0_prime_1": {"type": "K3", "kappa0": 0, "Pi": 24, "chi": 24, "chi_h": 2, "role": "fibre"},
+      "base_1_prime_5": {"type": "dP7", "kappa0": 2, "Pi": 8, "chi": 10, "chi_h": 1, "role": "LVS tau_s"},
+      "base_2_prime_6": {"type": "dP7", "kappa0": 2, "Pi": 8, "chi": 10, "chi_h": 1, "role": "direction plate"},
+      "base_3_prime_7": {"type": "Wilson", "kappa0": -2, "Pi": 4, "chi": 2, "chi_h": 0, "role": "D-terme"},
+      "base_4_prime_8": {"type": "Wilson", "kappa0": -2, "Pi": 4, "chi": 2, "chi_h": 0, "role": "enroulement"}
+    },
+    "nombres_intersection": {
+      "(0,3,4)": 2, "(1,1,1)": 2, "(1,1,3)": -2, "(1,3,3)": 2,
+      "(2,2,2)": 2, "(2,2,4)": -2, "(2,4,4)": 2,
+      "(3,3,3)": -2, "(3,3,4)": -2, "(4,4,4)": -2
+    },
+    "polynome_volume": "V(t) = 2t0*t3*t4 + t1^3/3 - t1^2*t3 + t1*t3^2 + t2^3/3 - t2^2*t4 + t2*t4^2 - t3^3/3 - t3^2*t4 - t4^3/3",
+    "expressions_tau": {
+      "tau_0": "2*t3*t4",
+      "tau_1": "(t1-t3)^2",
+      "tau_2": "(t2-t4)^2",
+      "tau_3": "2*t0*t4 - t1^2 + 2*t1*t3 - t3^2 - 2*t3*t4",
+      "tau_4": "2*t0*t3 - t2^2 + 2*t2*t4 - t3^2 - t4^2"
+    },
+    "verification_tip": {"V_tip": 59.33, "tau_tip": [12, 1, 1, 23, 19]}
+  },
+
+  "controles_topologiques": {
+    "Q1_topologie": "VALIDE",
+    "Q3_echelle": "VALIDE",
+    "Q4_enroulement_asymetrique": "VALIDE",
+    "del_Pezzo_diagonal": "VALIDE (kappa_sss=2, kappa_sij=0 pour (i,j)!=(s,s))",
+    "budget_Dterme": "VALIDE (5-2-1=2 directions plates)",
+    "critere_Z2_O3": {
+      "sigma_7": {
+        "O7": "D_7 (Wilson)",
+        "loci_O3_reels": ["D1.D4.D8","D2.D5.D9","D3.D4.D5","D3.D4.D8","D3.D5.D9","D3.D8.D9"],
+        "N_O3": 6, "chi_O7": 2, "Q_D3": 2, "entier": true
+      },
+      "sigma_8": {
+        "O7": "D_8 (Wilson)",
+        "N_O3": 14, "chi_O7": 2, "Q_D3": 4, "entier": true
+      }
+    }
+  },
+
+  "cone_kahler": {
+    "generatrices": [[2,0,0,1,1],[2,0,1,1,1],[1,0,1,0,1],[2,1,1,1,1],[1,0,0,0,0],[2,1,0,1,1]],
+    "nb_hyperplans": 14,
+    "tip_cone_etire": [6, 1, 2, 2, 3],
+    "contraintes_plan_t2_t4": {
+      "t4_min": 54.337, "t4_max": 121.774,
+      "t2_min": "t4 - 54.337", "t2_max": "t4",
+      "forme": "parallelogramme",
+      "sommets": [[0, 54.337],[54.337, 54.337],[67.437, 121.774],[121.774, 121.774]],
+      "branche": "d = t1 - t3 < 0 (essentiel)"
+    },
+    "points_testes": {
+      "(28,62)": "dans cone", "(40,62)": "dans cone", "(54,62)": "dans cone",
+      "(40,48)": "HORS CONE (t4 < 54.337, contrainte h[0])",
+      "(40,78)": "dans cone"
+    }
+  },
+
+  "point_LVS": {
+    "parametres": {"Vt": 1e6, "rs": 8.6411e-12, "tw": 1.51, "g_s": 0.1, "W0": 1.0, "a_s": 6.2832},
+    "xi": 0.3683, "tau_s_LVS": 6.733, "V_LVS": 6.878e17,
+    "tw_naturel_au_tip": 1.512,
+    "note_tw": "tw=0.5 incompatible avec le cône (contrainte t4>=t3 force tw>=1.5)",
+    "parametrisation_delta": {
+      "delta": 2.939575e-4,
+      "formule": "delta = t3 - t1 = sqrt(rs * Vt^(2/3))",
+      "avantage": "résout 2 inconnues (t0,t1) au lieu de 3, élimine l'ill-conditionnement",
+      "tau_s_satisfait_analytiquement": true
+    },
+    "t": [176.11, 54.3362, 40.0, 54.3372, 62.0],
+    "tau": [6737.8, 8.641e-8, 484.0, 15100.0, 15702.3],
+    "dans_cone": true,
+    "metrique_G_tau": {
+      "formule": "G_ij = -(M^-1)_ij/V + t_i*t_j/(2V^2), M_ij = kappa_ijk*t^k",
+      "facteur_2": "le facteur 1/2 dans le second terme (oublié au premier essai, corrigé)",
+      "eigenvalues": [2.82e-9, 3.39e-9, 2.20e-8, 2.69e-8, 5.00e-4],
+      "definie_positive": true,
+      "conditionnement": 1.77e5
+    },
+    "rang_complement_orthogonal": 2,
+    "continuation_rs": {
+      "etapes": [1e-2, 1e-4, 1e-6, 1e-8, 1e-10, 8.6411e-12],
+      "convergence": "OK jusqu'à rs=1e-10, résidu 2.3e-8 à rs=8.64e-12",
+      "rs_atteint": 1.0002e-10,
+      "note": "écart d'un facteur 10 sans conséquence (invariance en rs confirmée)"
+    }
+  },
+
+  "projections_certifiees": {
+    "point": "V=1e18, rs=8.6411e-12, dans le cône, branche d<0",
+    "statut": "ATTEIGNABLE (pas DANS — l'angle t n'est pas calculé)",
+    "K3_prime_1": {"p1": 0.0524, "p2": -0.4483, "norme_p": 0.4514, "fraction": 0.537, "statut": "MEILLEUR CANDIDAT, au milieu de la fenêtre"},
+    "dP7_plate_prime_6": {"p1": 1.2743, "p2": 1.0534, "norme_p": 1.6534, "fraction": 0.124, "statut": "ATTEIGNABLE"},
+    "Wilson_enroul_prime_8": {"p1": -1.4677, "p2": 0.8180, "norme_p": 1.6803, "fraction": 0.122, "statut": "ATTEIGNABLE"},
+    "Wilson_Dterm_prime_7": {"norme_p": 0.1760, "fraction": 0.0, "statut": "INATTEIGNABLE"}
+  },
+
+  "invariances": {
+    "en_volume": {
+      "V_testes": [1e6, 1e9, 1e12, 1e15, 1e18],
+      "K3_norme_p": [0.4514, 0.4514, 0.4514, 0.4514, 0.4514],
+      "interpretation": "|p| strictement invariant sur 12 ordres — propriété de la direction, pas de l'échelle"
+    },
+    "en_rs": {
+      "rs_testes": [1e-10, 1e-11, 8.6411e-12],
+      "K3_norme_p": [0.4514, 0.4514, 0.4514],
+      "interpretation": "projections identiques au chiffre près"
+    }
+  },
+
+  "dependance_position": {
+    "note": "|p|(K3) varie de 0.337 à 0.835 selon (t2,t4) — c'est ce que le potentiel de boucles doit fixer",
+    "points": [
+      {"t2": 28, "t4": 62, "norme_p_K3": 0.3365, "fraction": 0.30, "cone": true},
+      {"t2": 40, "t4": 62, "norme_p_K3": 0.4514, "fraction": 0.54, "cone": true},
+      {"t2": 54, "t4": 62, "norme_p_K3": 0.8353, "fraction": 0.29, "cone": true},
+      {"t2": 40, "t4": 48, "norme_p_K3": 0.4237, "fraction": 0.50, "cone": false},
+      {"t2": 40, "t4": 78, "norme_p_K3": 0.7347, "fraction": 0.36, "cone": true}
+    ],
+    "region_fenetre": "autour de (t2,t4) = (40,62)"
+  },
+
+  "potentiel_boucles_tentatives": {
+    "statut": "NON RESOLU — obstruction identifiée",
+    "tentative_1": {
+      "forme": "1/sqrt(tau_2) + 1/tau_4^2 + tau_4/V^2 (simplifiée)",
+      "resultat": "minimum au bord du cône (artefact — termes uniquement décroissants)"
+    },
+    "tentative_2": {
+      "forme": "Eq. 2.20, 3 couples (2,2),(2,4),(4,4)",
+      "points_valides": "262/1600 (16%)",
+      "resultat": "minimum au bord, dt2=0.10"
+    },
+    "tentative_3": {
+      "forme": "Eq. 2.20, 25 couples, C_KK=(1,1,1,1,1)",
+      "points_valides": "714/1600 (45%)",
+      "minimum": {"t2": 84.96, "t4": 85.46, "V_pot": 7.29e-18},
+      "norme_p_K3_au_minimum": 1.6674,
+      "resultat": "minimum au bord supérieur (t2≈t4), |p| loin de la fenêtre"
+    },
+    "probleme_identifie": "C_KK=(1,1,1,1,1) non physique — les coefficients dépendent de la config de branes (O3 en D2∩D6∩D8 pour σ7)",
+    "ce_qui_est_necessaire": "coefficients C_alpha^KK pour σ7 depuis la Table 14 de 2606.10850",
+    "generique_sur_coefficients_aleatoires": "7/40 sets donnent un minimum intérieur, 14% dans la fenêtre (v4.0 §8)"
+  },
+
+  "methodes_numeriques": {
+    "metrique_en_tau": "G_ij = -(M^-1)_ij/V + t_i*t_j/(2V^2), pas en base t",
+    "parametrisation_delta": "delta = t3-t1 fixé analytiquement, 2 inconnues au lieu de 3",
+    "projecteur_SVD": "Cholesky(G) → QR des directions fixées → SVD du complément orthogonal",
+    "continuation": "depuis point de référence (40,62) vers points cibles",
+    "fsolve": "xtol=1e-12, points initiaux multiples",
+    "verification_cone": "cy.toric_kahler_cone() AVANT toute évaluation de G"
+  },
+
+  "erreurs_corrigees": {
+    "divisor_topology": "non disponible sur Polytope → calcul via κ₀ et Π depuis second_chern_class",
+    "formule_scaling": "tau_s_num = tau_s_LVS * scale^2 (pas / scale^2)",
+    "V_of": "polynôme cubique (pas forme Swiss cheese en t^1.5)",
+    "metrique": "en base τ (pas en base t) — G_t = J^T G_τ J avec J loin de l'identité",
+    "facteur_2": "G_ij = -(M^-1)_ij/V + t_i*t_j/(2V^2) — le 1/2 oublié au premier essai",
+    "branche_d": "d = t1-t3 < 0 (l'audit avait pris d>0, ce qui sortait du cône)",
+    "statut": "ATTEIGNABLE pas DANS (|p| est la borne sup de c_b, pas c_b)",
+    "tw": "tw=0.5 incompatible avec le cône → tw=1.51 (naturel au tip)",
+    "C_KK": "(1,1,1,1,1) non physique → coefficients à déduire de la config de branes"
+  },
+
+  "resultats_invalides": {
+    "Wilson_au_tip": {"norme_p": 0.7023, "raison": "point hors cône"},
+    "Wilson_LVS_hors_cone": {"norme_p": 0.6283, "fraction": 0.53, "raison": "point hors cône, métrique en t"},
+    "K3_au_tip": {"norme_p": 0.307, "raison": "point hors cône"},
+    "dP7_au_tip": {"norme_p": null, "raison": "artefact numérique (mode quasi-nul t2=t4)"}
+  },
+
+  "positionnement_litterature": {
+    "Berg_Haack_Pajer_2005": "coefficients explicites pour orientifolds toroïdaux uniquement",
+    "Cicoli_Conlon_Quevedo_2008": "scaling avec coefficients d'ordre unité laissés en paramètres",
+    "fibre_inflation": "même approche — coefficients non calculés",
+    "frontiere_du_domaine": "coefficients C^KK, C^W non calculables pour un CY général",
+    "v4.0_vs_v3.1": "avancée majeure — matching theorem, identités de norme, no-go, candidat explicite, arrêt honnête"
+  },
+
+  "verdict_global": {
+    "candidat_vivant": true,
+    "valides": [
+      "topologie (Q1, Q3, Q4, del Pezzo diagonal, budget 5-2-1)",
+      "tadpoles entiers (σ7: Q=2, σ8: Q=4)",
+      "critère Z₂ (6 loci O3 pour σ7, 14 pour σ8)",
+      "cône de Kähler explicite (parallélogramme dans le plan t2,t4)",
+      "métrique définie positive, rang 2 du complément",
+      "invariance en V (12 ordres) et en rs",
+      "p1, p2 extraits au point LVS dans le cône",
+      "K3 meilleur enroulement : |p|=0.4514, fraction 53.7%, au milieu de la fenêtre"
+    ],
+    "ouvert": [
+      "position le long des directions plates (t2,t4) — fixée par le potentiel de boucles",
+      "coefficients C^KK pour σ7 (config de branes)",
+      "minimisation du potentiel dans le parallélogramme du cône"
+    ],
+    "meilleur_enroulement": "K3 (prime 1), |p|=0.4514, fraction 53.7%",
+    "prochaine_etape": "coefficients C_alpha^KK pour σ7 depuis la Table 14 de 2606.10850"
+  }
+}

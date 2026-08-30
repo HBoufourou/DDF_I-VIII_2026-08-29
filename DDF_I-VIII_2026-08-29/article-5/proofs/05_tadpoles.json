@@ -1,0 +1,33 @@
+{
+ "formule": "r = c^2 g_s^2 R / (2 l_s)",
+ "points": [
+  {
+   "M_s_GeV": 80000000.0,
+   "l_s_m": 2.4665875e-24,
+   "R_sur_ls": 3.324431020590188e+18,
+   "r_F0_8": 166221551029509.4,
+   "r_F0_1": 2597211734836.0845
+  },
+  {
+   "M_s_GeV": 200000000.0,
+   "l_s_m": 9.86635e-25,
+   "R_sur_ls": 8.311077551475469e+18,
+   "r_F0_8": 415553877573773.44,
+   "r_F0_1": 6493029337090.21
+  },
+  {
+   "M_s_GeV": 360000000.0,
+   "l_s_m": 5.481305555555556e-25,
+   "R_sur_ls": 1.4959939592655843e+19,
+   "r_F0_8": 747996979632792.2,
+   "r_F0_1": 11687452806762.379
+  }
+ ],
+ "cible_r": [
+  0.149,
+  0.419
+ ],
+ "verdict": "IIA massive incompatible avec un intervalle mesoscopique (13-16 ordres)",
+ "configuration": "F0 = 0 obligatoire => annulation locale => 8 D8 + O8 a chaque bord",
+ "consequence": "la paroi lointaine porte un secteur de jauge cache, contraint par Delta N_eff"
+}

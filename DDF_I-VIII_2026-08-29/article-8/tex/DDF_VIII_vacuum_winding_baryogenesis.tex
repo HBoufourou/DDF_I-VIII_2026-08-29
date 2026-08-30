@@ -1,0 +1,372 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,booktabs,geometry,graphicx}
+\geometry{margin=2.5cm}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue]{hyperref}
+
+\title{\textbf{The Dark Dimension Framework --- Cosmic Shadow Geometry\\[4pt]
+VIII: Vacuum Winding and the Origin of the Matter--Antimatter Asymmetry}}
+\author{Hicham Boufourou\\ \small Independent Researcher, Brussels, Belgium}
+\date{August 2026 --- v1.0}
+
+\newcommand{\meV}{\,\mathrm{meV}}
+\newcommand{\GeV}{\,\mathrm{GeV}}
+\newcommand{\eV}{\,\mathrm{eV}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+The condensate of Article~III carries a phase; a phase on an interval can wind.
+This paper asks whether the winding of the vacuum along the fifth dimension can
+bias the early universe toward matter, and answers with a computation rather
+than a scenario. The mechanism belongs to the established class of spontaneous
+baryogenesis (Cohen--Kaplan); what is new is the geometric origin of the
+chemical potential, $\mu_w=\kappa_w\,\partial_y\Phi$, whose gradient is the
+linear well of Article~II and is therefore already fixed by the series. Three
+results follow. \emph{The nucleon lock:} a $\Delta B=1$ transfer operator
+without a mass threshold gives the proton a nanosecond lifetime; the transfer
+must pass through a state heavier than the proton, and the $B=1,\ L=1$ states
+of Article~VII are exactly the required object --- the floor $m_X>m_p$ of that
+article's benchmark window is hereby derived. \emph{The closure:} demanding
+$\eta_B=6.1\times10^{-10}$ with the corpus numbers returns an order-one
+transfer coefficient, $b_w\simeq1$--$5$, \emph{if and only if} the winding
+normalisation is the meV scale of the sector itself; at the TeV wall scale the
+mechanism fails by fifteen orders. The paper is therefore conditional on one
+microscopic question --- who carries the winding --- and says so.
+\emph{The residual:} if a trace of the bias survives today, its judges are
+catalogued in an SME dictionary with inserted bounds; a narrowing theorem shows
+that the only surviving route for a present-day imprint is the four-fermion $X$
+operator, making the running LHCb searches of Article~VII a test of the
+baryogenesis operator itself.
+\end{abstract}
+
+% ======================================================================
+\section{Position of this paper}
+\label{sec:position}
+
+Earlier drafts carried the label ``DDF~0'', as if this text founded the
+series. It does not: every quantitative input below --- the well slope of
+Article~II, the condensate of Article~III, the shadow scale of Article~IV, the
+charge classes of Article~VII --- is inherited. The honest label is
+\textbf{VIII}, and the paper stands or falls with its parents.
+
+The mechanism class is not new either, and we say so first. A chemical
+potential coupled to a current, biasing equilibrium and freezing an asymmetry
+at decoupling, is the \emph{spontaneous baryogenesis} of Cohen and
+Kaplan~\cite{CohenKaplan}, extended by Cohen, Kaplan and
+Nelson~\cite{CKN}. That class is the parent of everything below; the
+contribution of this paper is confined to three items: the geometric origin of
+$\mu_w$ (\S\ref{sec:bias}), the nucleon lock and its consequence for
+Article~VII (\S\ref{sec:lock}), and the two-branch closure
+(\S\ref{sec:closure}). [Anteriority declared.]
+
+% ======================================================================
+\section{The bias: a chemical potential from geometry}
+\label{sec:bias}
+
+\subsection{The winding charge}
+The condensate of Article~III is a complex field; its phase $\theta$ lives on
+the interval of Article~I. A configuration $\theta(y)$ interpolating by $2\pi
+n$ across the interval carries the integer winding $n$, with current
+$j_w^\mu\propto\epsilon^{\mu\nu}\partial_\nu\theta$ in the effective
+two-dimensional $(t,y)$ reduction. Winding is topological: it cannot relax
+locally, only through the boundaries. [Derived, standard.]
+
+\subsection{The chemical potential}
+A background gradient along $y$ acts on any current it couples to as a
+chemical potential. We write
+\begin{equation}
+\mu_w \;=\; \kappa_w\,\partial_y\Phi\Big|_{\rm brane},
+\label{eq:muw}
+\end{equation}
+with $\Phi$ the dark scalar whose profile Article~II derived to be
+\emph{exactly linear}: slope
+\begin{equation}
+F \;=\; \frac{\varepsilon}{\ell} \;=\;
+\frac{24\meV}{5.81\,\mu\mathrm{m}}
+\;=\; 24\meV\times34.0\meV \;=\; 8.15\times10^{-4}\eV^2 .
+\label{eq:slope}
+\end{equation}
+The gradient is therefore \emph{not a free function}: it is the capacitor of
+Article~II, already fixed by the tower. What remains free is the normalisation
+$\kappa_w$, of dimension (energy)$^{-1}$. Two scales are natural:
+\begin{equation}
+\kappa_w \sim \frac{1}{\mu}\ \ (\text{the meV scale of the sector itself})
+\qquad\text{or}\qquad
+\kappa_w \sim \frac{1}{M_S}\ \ (\text{the TeV wall scale}),
+\label{eq:branches}
+\end{equation}
+giving respectively
+\begin{equation}
+\mu_w \;=\; \frac{F}{\varepsilon} \;=\; \frac{1}{\ell} \;=\; 34\meV
+\qquad\text{or}\qquad
+\mu_w \;=\; \frac{F}{M_S} \;=\; 1.4\times10^{-16}\eV .
+\label{eq:muw_values}
+\end{equation}
+If the winding field is the condensate phase itself --- the sector's own
+Goldstone --- the first normalisation is the natural one. The paper does not
+choose; \S\ref{sec:closure} shows the choice is the entire verdict, and
+\S\ref{sec:die} files it as the gate. [Structure derived; scale open.]
+
+\paragraph{Assumption (declared): frozen geometry.}
+The slope entering the closure is today's value~(\ref{eq:slope}). This assumes
+the wall and well are at (or near) their final form at the freeze-out
+temperature of \S\ref{sec:lock}, $T_f\sim0.05$--$0.2\GeV$. The assumption is
+consistent --- the wall forms at $T\sim M_S\sim$~TeV, four orders above $T_f$
+--- but it is an assumption, not a theorem, and a first-order history of
+$\partial_y\Phi(T)$ would replace it. [Assumption.]
+
+% ======================================================================
+\section{The transfer, and the nucleon lock}
+\label{sec:lock}
+
+The bias~(\ref{eq:muw}) acts on baryons only through an operator converting
+winding charge into baryon number, $\Delta w=\mp1\leftrightarrow\Delta B=\pm1$.
+Sakharov's conditions are then met: $B$~violation (the transfer operator),
+$C/CP$~violation (the winding direction), departure from equilibrium (the
+freeze-out below).
+
+\paragraph{Proposition L (the nucleon lock).}
+\textit{The transfer operator must pass through a state heavier than the
+proton.}
+A contact transfer suppressed by the wall scale, $\mathcal{O}\sim
+(j_w\!\cdot\!j_B)/M_S^2$, with no mass threshold, opens $p\to(\text{light
+winding quantum})+\ell$ at the rate $\Gamma_p\sim m_p^5/M_S^4$, i.e.\ a proton
+lifetime
+\begin{equation}
+\tau_p \;\sim\; 1.2\times10^{-9}\ \mathrm{s},
+\end{equation}
+against the observed $\tau_p>10^{34}$~yr --- an excess of fifty-one orders. The
+only escape is kinematic: the minimal winding-carrying, baryon-number-carrying
+excitation must satisfy $m>m_p$, closing the channel at zero temperature while
+the hot plasma, at $T\gtrsim m$, crosses the threshold freely.
+[Derived.]
+
+\paragraph{Consequence for Article~VII.}
+The states with exactly this charge profile --- carrying $B$ together with the
+dark quantum number, heavier than the proton --- are the $X$ states of the
+empty classes $(0,1,1)$ and $(1,1,1)$ of Article~VII, whose benchmark window is
+$4$--$6\GeV$. Two promotions follow. First, the $X$ states, until now merely
+\emph{permitted} by the Fano classification, become \emph{necessary} to this
+mechanism: no $X$, no transfer, no asymmetry. Second, the floor of the
+benchmark window, $m_X>m_p$, until now part of a scaling assumption, is
+\emph{derived} here as a survival condition. (The ceiling remains a benchmark.)
+The running LHCb searches
+(\texttt{Lb\_baryon\_lepton\_spectrum\_v1}, statistics in
+$m(\Lambda_c^+\mu^-)$ and $m(p\mu^-)$;
+\texttt{\_v2}, reach to $6.05\GeV$ through $m(\Xi_c^0\mu^-)$ and
+$m(\Omega_c^0\mu^-)$) therefore probe the transfer sector of this paper.
+[Derived; searches running.]
+
+\paragraph{Freeze-out.}
+With the threshold at $M_X$, equilibrium transfer shuts off by Boltzmann
+suppression when $T$ falls below $M_X$; the standard logarithm gives
+\begin{equation}
+T_f \;\sim\; \frac{M_X}{25} \;\approx\; 200\ \mathrm{MeV}
+\qquad (M_X=5\GeV).
+\label{eq:tf}
+\end{equation}
+The alternative bookkeeping --- rate equals Hubble for the contact operator,
+$T_f=(M_S^4/M_{\rm Pl})^{1/3}=47$~MeV --- lands within a factor four; the
+closure below is insensitive to the choice. [Derived, two routes, one order.]
+
+% ======================================================================
+\section{The closure}
+\label{sec:closure}
+
+\subsection{The chain}
+In equilibrium under the bias, the plasma carries
+$n_B=b_w\,\chi\,\mu_w$ with $\chi\simeq T^2/6$ the baryon-number
+susceptibility per relevant degree of freedom and $b_w$ the order-one transfer
+coefficient collecting group-theory and channel counting. At freeze-out the
+asymmetry is locked:
+\begin{equation}
+\eta_B \;=\; \frac{n_B}{n_\gamma}\bigg|_{T_f}
+\;\simeq\; \frac{b_w\,(T_f^2/6)\,\mu_w}{0.244\,T_f^3}
+\;\simeq\; \frac{b_w\,\mu_w}{1.5\,T_f}\,\Big.^{-1}
+\quad\Longrightarrow\quad
+b_w\,\mu_w \;\simeq\; 1.5\,\eta_B\,T_f .
+\label{eq:closure}
+\end{equation}
+
+\subsection{The verdict, in numbers}
+With $\eta_B=6.1\times10^{-10}$ (Planck) and the two freeze-out routes:
+\begin{center}\small
+\begin{tabular}{lcccc}
+\toprule
+route & $T_f$ & $b_w\mu_w$ required & $\mu_w$ (meV branch) & $b_w$ required\\
+\midrule
+threshold at $M_X$ & $200$~MeV & $1.8\times10^{-1}\eV$ & $34\meV$ & $\mathbf{5.4}$\\
+$\Gamma=H$ & $47$~MeV & $4.3\times10^{-2}\eV$ & $34\meV$ & $\mathbf{1.3}$\\
+\midrule
+either & --- & --- & $\mu_w$ (TeV branch): $1.4\times10^{-16}\eV$ &
+$\sim10^{15}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+\textbf{On the meV branch the accounting closes with nothing forced:} the
+required transfer coefficient is $b_w\simeq1$--$5$, in the same order-one class
+as the $c_i$ of Article~IV. \textbf{On the TeV branch the mechanism fails by
+fifteen orders} and no adjustment of $T_f$, $\chi$, or channel counting ---
+each worth a factor of a few --- can bridge it. [Computed; script
+\texttt{d4\_closure.py}.]
+
+\subsection{What the verdict means}
+The mechanism is neither confirmed nor decorative: it is \emph{conditional on
+one microscopic derivation} --- the normalisation scale of the winding
+coupling. If the winding is carried by the condensate phase, whose own scale is
+the meV sector, the branch that closes is the natural one and this paper has
+quantitative content. If the winding normalisation is instead set at the wall,
+the mechanism is dead and \S\ref{sec:die}(iii) applies. The question is sharp,
+answerable within the effective theory of Articles~II--III, and is filed as
+the gate of this paper. [Open, and declared.]
+
+% ======================================================================
+\section{The direction and the amplitude, derived}
+\label{sec:dipole}
+
+Earlier drafts posited ``a fixed cosmological direction'' and a benchmark
+$A\sim10^{-3}$. Both are derivable. A condensate defines a rest frame; a
+directional asymmetry seen from Earth arises from \emph{our motion} through
+it. If the condensate is comoving with the cosmic rest frame --- the natural
+reading of Article~III's cosmology --- then
+\begin{equation}
+\hat n_{\rm DDF} \;=\; \hat n_{\rm CMB}\ \big[(l,b)\simeq(264^\circ,48^\circ)\big],
+\qquad
+A_{\rm DDF} \;=\; \beta \;=\; \frac{v_{\rm CMB}}{c} \;=\; 1.23\times10^{-3}.
+\label{eq:dipole}
+\end{equation}
+The direction is thereby fixed \emph{a priori} --- no sky scan, no trials
+factor --- and the amplitude, previously a benchmark, becomes the dipole
+velocity. Any test of Prediction~I uses~(\ref{eq:dipole}) frozen before the
+data are seen. [Derived under the comoving assumption, which is declared.]
+
+% ======================================================================
+% ---- Section: residual operator and SME dictionary (Phase A) ----
+% The full finalized text of this section is maintained in
+% proofs/section_dictionary_finale.tex and is \input here verbatim.
+\input{section_dictionary_finale.tex}
+
+% ======================================================================
+\section{The judges}
+\label{sec:judges}
+
+\begin{center}\small
+\begin{tabular}{p{4.4cm}p{9.2cm}}
+\toprule
+judge & what it constrains \\
+\midrule
+$\eta_B=6.1\times10^{-10}$ (Planck) & the target of the closure
+(\S\ref{sec:closure}) \\
+nucleon lifetimes ($\tau_p>10^{34}$~yr) & forces the lock of \S\ref{sec:lock};
+any thresholdless transfer is dead on arrival \\
+neutral-meson oscillations (D0, BaBar, KTeV) & the flavor sector of any
+present-day residual (\S\ref{sec:dictionary}) \\
+WEP / countershading (MICROSCOPE) & the universal constant part of the
+residual \\
+clock comparisons, comagnetometers & species differences; axial contamination \\
+baryon isocurvature (Planck, few \%) & any spatial variation of $\mu_w$ at
+recombination scales \\
+BBN & the mechanism must be complete before $T\sim1$~MeV --- satisfied,
+$T_f\gtrsim47$~MeV \\
+LHCb searches \texttt{v1}/\texttt{v2} (running) & the $X$ transfer sector;
+under the flavor bridge, Prediction~I \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+% ======================================================================
+\section{Epistemic status}
+\label{sec:status}
+
+\begin{center}\small
+\begin{tabular}{p{7.2cm}p{6.4cm}}
+\toprule
+element & status \\
+\midrule
+mechanism class (spontaneous baryogenesis) & inherited, cited
+[Cohen--Kaplan] \\
+winding charge on the interval & derived (topology) \\
+gradient $\partial_y\Phi$ = well slope $F$ & derived (Article~II) \\
+normalisation scale $\kappa_w$ & \textbf{open --- the gate} \\
+nucleon lock, $m_X>m_p$ & derived \\
+$X$ states as necessary mediators & derived (given the lock) \\
+freeze-out $T_f\sim0.05$--$0.2\GeV$ & derived, two routes \\
+closure $b_w\simeq1$--$5$ (meV branch) & computed \\
+frozen geometry at $T_f$ & assumption, declared \\
+$\hat n_{\rm DDF}=\hat n_{\rm CMB}$, $A=\beta$ & derived under the comoving
+assumption \\
+flavor bridge ($c\mu\to bs$) & declared assumption (D2 decides) \\
+two-jaw window of the strong version & pre-registered; second jaw to be
+quantified (D2) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+% ======================================================================
+\section{How this paper dies}
+\label{sec:die}
+
+\emph{(i)} If the winding is shown not to couple to the transfer operator ---
+$\mu_w=0$ --- there is no bias and no paper.
+\emph{(ii)} If no $B=1,\ L=1$ state exists above $m_p$ (the LHCb searches and
+their successors bounding the window ever tighter), the lock of
+\S\ref{sec:lock} cannot be satisfied and the transfer is dead by the nucleon
+lifetime.
+\emph{(iii)} If the winding normalisation is derived to sit at the wall scale,
+the closure fails by fifteen orders and the mechanism is withdrawn.
+\emph{(iv)} If the two-jaw window of \S\ref{sec:dictionary} is empty at the
+couplings $\eta_B$ requires, the strong version of Prediction~I dies; the
+weak version (purely primordial bias) survives only as far as (i)--(iii)
+allow.
+\emph{(v)} If the flavor-bridge assumption is refuted by the explicit operator
+construction, Prediction~I is withdrawn regardless of the window.
+\emph{(vi)} If the parent framework dies at $8.2\,\mu$m (Article~I), this
+paper goes with it.
+
+% ======================================================================
+\begin{thebibliography}{99}
+\bibitem{CohenKaplan} A.~G. Cohen and D.~B. Kaplan,
+\emph{Thermodynamic generation of the baryon asymmetry},
+Phys.\ Lett.\ B \textbf{199}, 251 (1987);
+\emph{Spontaneous baryogenesis}, Nucl.\ Phys.\ B \textbf{308}, 913 (1988).
+\bibitem{CKN} A.~G. Cohen, D.~B. Kaplan and A.~E. Nelson,
+\emph{Progress in electroweak baryogenesis},
+Ann.\ Rev.\ Nucl.\ Part.\ Sci.\ \textbf{43}, 27 (1993).
+\bibitem{DDF1} H.~Boufourou, \emph{The Dark Dimension Framework I: The Stage},
+this series (2026).
+\bibitem{DDF2} H.~Boufourou, \emph{II: The Well and the Tower}, this series
+(2026).
+\bibitem{DDF3} H.~Boufourou, \emph{III: The Medium}, this series (2026).
+\bibitem{DDF4} H.~Boufourou, \emph{IV: One Scale and its Shadow}, this series
+(2026).
+\bibitem{DDF5} H.~Boufourou, \emph{V: From Type~I$'$ Strings --- a Candidate
+that Reaches the Window}, this series (2026).
+\bibitem{DDF6} H.~Boufourou, \emph{VI: What the Candidate Geometry Implies},
+this series (2026).
+\bibitem{DDF7} H.~Boufourou, \emph{VII: Seven Charge Classes, and Two that are
+Empty}, this series (2026).
+\bibitem{KR} V.~A. Kosteleck\'y and N.~Russell, \emph{Data Tables for Lorentz
+and CPT Violation}, January 2026 edition, arXiv:0801.0287.
+\bibitem{KT} V.~A. Kosteleck\'y and J.~D. Tasson, \emph{Matter-gravity
+couplings and Lorentz violation}, Phys.\ Rev.\ D \textbf{83}, 016013 (2011).
+\bibitem{MICROSCOPE} H.~Pihan-Le Bars \emph{et al.}, \emph{New test of Lorentz
+invariance using the MICROSCOPE space mission}, Phys.\ Rev.\ Lett.\ (2019);
+P.~Touboul \emph{et al.}, Phys.\ Rev.\ Lett.\ \textbf{129}, 121102 (2022).
+\bibitem{D0} V.~M. Abazov \emph{et al.} (D0), \emph{Search for violation of
+CPT and Lorentz invariance in $B_s^0$ meson oscillations},
+arXiv:1506.04123.
+\bibitem{LHCbCharm} \emph{New limits on CPT-symmetry violation in charm
+mesons}, arXiv:2507.05457.
+\bibitem{Planck} Planck Collaboration, \emph{Planck 2018 results. VI.
+Cosmological parameters}, Astron.\ Astrophys.\ \textbf{641}, A6 (2020).
+\end{thebibliography}
+
+\vspace{6pt}
+\noindent\small AI-assistance: general-purpose AI tools were used in the
+preparation of this work, as in the rest of the series.
+
+\end{document}

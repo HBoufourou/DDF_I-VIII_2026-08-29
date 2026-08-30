@@ -1,0 +1,176 @@
+% ======================================================================
+% Article 8 (DDF) — Section : The residual operator and its SME dictionary
+% VERSION FINALE — corrections appliquées :
+%   (1) dimension-7 : /Lambda^3 (et non /Lambda^2)
+%   (2) les deux productions LHCb citées (v1 = statistique, v2 = Xi/Omega)
+%   (3) hypothèse du pont de saveur déclarée (paragraphe dédié)
+%   (4) une seule version de la section, un seul \label
+%   (5) modulation sidérale horloges/comagnétomètres rétablie (ligne 5)
+%   (6) langage « bounds, inserted » mis à l'indicatif
+%   (7) règle de verdict forte : fenêtre à DEUX mâchoires
+% ======================================================================
+
+\section{The residual operator and its SME dictionary (Phase A)}
+\label{sec:dictionary}
+
+If the winding bias survives recombination, its four-dimensional imprint is a
+background vector coupled to the currents the transfer operator carries. We
+write it model-independently as
+\begin{equation}
+\Delta\mathcal{L}_{\rm res}
+=
+V_\mu\Big[\,q_B\,j_B^\mu+\sum_f q_f\,\bar\psi_f\gamma^\mu\psi_f\Big],
+\label{eq:residual}
+\end{equation}
+with $V_\mu$ fixed in the cosmic rest frame. In the Earth frame,
+$V_0\simeq\mu_w$ and $\vec V\simeq\mu_w\,\beta\,\hat n_{\rm CMB}$ with
+$\beta=v_{\rm CMB}/c=1.23\times10^{-3}$ (\S\ref{sec:dipole}). Equation
+(\ref{eq:residual}) is the object the experiments judge. Its translation into
+the Standard-Model Extension (SME) is the following dictionary; bounds are
+taken from the January~2026 edition of the Kosteleck\'y--Russell data tables
+(arXiv:0801.0287, updated), cited here rather than the RMP~2011 edition.
+
+\begin{center}\small
+\begin{tabular}{p{3.8cm}p{2.3cm}p{3.9cm}p{4.0cm}}
+\toprule
+Piece of $V_\mu\times$ current & SME object & Observable channel & Bound \\
+\midrule
+Universal vector, constant, $q_f=q_B$ & $a_\mu^{B}$ & removable in flat space;
+\emph{countershaded} by gravity (WEP) &
+$\bar a_{\rm eff}\sim10^{-10}\text{--}10^{-11}$~GeV
+[Kosteleck\'y--Tasson 2011; MICROSCOPE 2019] \\
+Species differences & $\Delta a_0$ & clock comparisons &
+[KR jan.~2026, proton sector D10--D14] \\
+Axial contamination & $b_\mu^{p,n,e}$ & comagnetometers He/Xe &
+$\sim10^{-33}\text{--}10^{-34}$~GeV \\
+Gradient $\nabla V_0$ & --- & composition-dependent fifth force &
+[E\"ot-Wash; neutron interferometry] \\
+Spatial part, cosmic-fixed (matter sector) & sidereal harmonics &
+clock and comagnetometer modulation & [KR jan.~2026, sidereal sector] \\
+Spatial part, cosmic-fixed (flavor sector) & two-quark $\Delta a$ &
+neutral-meson oscillations and decay asymmetries &
+K: $\Delta a\sim10^{-18}$~GeV (KTeV/KLOE);
+$B^0$: $\sim10^{-14}$~GeV (BaBar);
+$B_s$: $\Delta a_\perp<1.2\times10^{-12}$~GeV,
+$\Delta a_T-0.396\,\Delta a_Z\in(-0.8;\,3.9)\times10^{-13}$~GeV (D0) \\
+Flavor-non-universal ($X$-mediated, four-fermion, dimension~7) &
+off-diagonal, $\varepsilon^2$-fed & $B_s$--$\bar B_s$ mixing at second order &
+protected; D0 applies at $\varepsilon^2$ [quantified in D2/D4] \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\paragraph{Method anteriority (R11).}
+The observable of Prediction~I --- a beauty-hadron decay asymmetry correlated
+with the sidereal phase --- is not a new invention: it is the established
+observable class of the SME matter sector, measured and bounded by
+D0~[arXiv:1506.04123], BaBar, KTeV and FOCUS, with ongoing LHCb charm analyses
+[arXiv:2507.05457]. We cite this class as method anteriority: the prediction
+borrows its method, and the class's null results are its judges.
+
+\paragraph{Proposition A1 (removability, amended).}
+\textit{In flat space, if the residual couples universally to the conserved
+baryon current, no non-gravitational local observable --- including the
+$b\to s\mu^+\mu^-$ imprint of Prediction~I --- survives.}
+Under $\psi\to e^{iB_\psi a\cdot x}\psi$ with universal $B_\psi$, the constant
+$a_\mu^B$ is removed; only species differences (clocks) and gradients (fifth
+force) remain. \textbf{Amendment:} in the presence of gravity the removal is
+incomplete --- the universal $a_\mu$ re-enters through matter--gravity couplings
+(countershading, Kosteleck\'y--Tasson, PRD~83, 016013 (2011)), and is bounded by
+weak-equivalence tests at $\bar a_{\rm eff}\sim10^{-10}\text{--}10^{-11}$~GeV
+(MICROSCOPE). The proposition therefore reads \emph{no non-gravitational
+observable}; the gravitational one is judged at $10^{-10}$~GeV, weak compared to
+the meson bounds and not verdict-changing, but it closes the ``constant part is
+unobservable'' escape. \textit{[Derived, field-redefinition identity; amendment
+from the literature.]}
+
+\paragraph{Proposition A2 (flavor obstruction).}
+\textit{A surviving decay imprint requires non-universal flavor charges.}
+Since $b$ and $s$ carry the same $B=1/3$, the universal redefinition of A1
+leaves $\bar s\gamma^\mu b$ invariant and removes the imprint with it. A
+directional term $P_1(\hat p_{\mu\mu}\cdot\hat n_{\rm DDF})$ can therefore
+exist only if $V_\mu$ couples with charges that differ between flavors ---
+precisely the structure the $X$ mediators of Article~VII supply
+($B=1$, $L=1$, coupled to $c\,\mu$ channels). \textit{[Derived.]}
+
+\paragraph{The flavor bridge (declared assumption).}
+The $X$ states of Article~VII are established at the $c\,\mu$ vertex
+($X^0_{(0,1,1)}\to\Lambda_c^+\mu^-$); the imprint of Prediction~I lives in
+$b\to s\mu^+\mu^-$. The narrowing theorem below therefore carries a declared
+assumption: \emph{that the flavor couplings of $X$ extend from the $c\mu$
+vertex to the $bs$ current.} This extension is not automatic; it is to be
+specified --- or refuted --- by the operator construction of D2. Every
+statement of the form ``tests both at once'' holds under this assumption and
+not otherwise. \textit{[Declared assumption.]}
+
+\paragraph{The narrowing theorem (verdict of the numbers).}
+For a two-quark vector insertion $\varepsilon\,(\bar s\gamma^\mu b)\hat V_\mu$
+to imprint a directional modulation of order $\beta$ on $b\to s\mu^+\mu^-$, the
+coefficient must sit at $\varepsilon\sim10^{-5}\text{--}10^{-6}$~GeV; the D0
+bound on precisely this object is $10^{-12}\text{--}10^{-13}$~GeV.
+\textbf{The strong version, realized through a two-quark insertion, is excluded
+by six to seven orders of magnitude.} Proposition~A2, however, identified the
+only exit, and the computation confirms it as the sole one: a four-fermion
+operator mediated by the $X$ states of Article~VII,
+$V_\mu(\bar s\gamma^\mu b)(\bar\mu\mu)/\Lambda^3$ --- of dimension seven, hence
+the cubic scale --- feeds $B_s$--$\bar B_s$ mixing only at second order
+($\varepsilon^2$), and thus evades the D0 bound structurally while producing
+the directional imprint in the decay. The clause ``protected,
+flavor-non-universal structure'' of the pre-registered verdict rule is
+therefore promoted from a cautious clause to a \textbf{narrowing theorem}:
+under the flavor-bridge assumption above, Prediction~I can survive only through
+the $X$ operator of Article~VII. The two articles are no longer neighbours; one
+is the survival condition of the other, and the ongoing LHCb searches
+(\texttt{Lb\_baryon\_lepton\_spectrum\_v1}, which carries the statistics in
+$m(\Lambda_c^+\mu^-)$ and $m(p\mu^-)$, and
+\texttt{Lb\_baryon\_lepton\_spectrum\_v2}, which extends the reach through
+$m(\Xi_c^0\mu^-)$ and $m(\Omega_c^0\mu^-)$ to 6.05~GeV) test both at once.
+\textit{[Derived, structural; protection factor quantified in D2/D4.]}
+
+\paragraph{Verdict rules (pre-registered, amended; the two-jaw window).}
+The strong version does not survive by smallness alone: an $X$ operator small
+enough to evade every bound while imprinting nothing is not a surviving
+prediction but an unfalsifiable one. The strong version therefore lives in a
+\emph{window with two jaws}, in the manner of the $\lambda$ window of
+Article~III (astrophysical ceiling, cosmological floor):
+\begin{itemize}
+\item \textbf{Weak version.} If, at the couplings required by $\eta_B$, the
+window below is empty --- in particular if the $\varepsilon^2$ contribution to
+$B_s$--$\bar B_s$ mixing exceeds the D0 bound --- the residual is excluded as a
+present-day coupling: the bias is purely primordial and Prediction~I is
+withdrawn as a residual imprint.
+\item \textbf{Strong version.} If, at the couplings required by $\eta_B$, the
+$X$-mediated structure satisfies \emph{both} jaws ---
+(\emph{i}) the decay-interference ratio remains of order one, so that the
+imprint reaches $A_{\rm DDF}\simeq\beta$, and
+(\emph{ii}) the $\varepsilon^2$ mixing contribution stays below the D0 bound
+--- then Prediction~I is retained with $\hat n_{\rm DDF}=\hat n_{\rm CMB}$ and
+$A_{\rm DDF}=\beta=1.23\times10^{-3}$ (\S\ref{sec:dipole}), and the same $X$
+operator that baryogenesis needs becomes testable in the LHCb searches of
+Article~VII.
+\end{itemize}
+Whether the window is non-empty at the couplings $\eta_B$ requires is the
+single gate computation of this article (D4); $\chi_w$, $\Gamma_w$ and $\mu_w$
+are its inputs.
+
+\paragraph{Correction of an earlier conflation.}
+The figures $10^{-31}$--$10^{-33}$~GeV apply to the \emph{axial} coefficients
+$b_\mu$ (comagnetometers). The DDF residual is naturally \emph{vector}; its
+judges are the clock, WEP, fifth-force and meson-oscillation lines of the
+dictionary, whose bounds are strong but of a different order.
+
+\paragraph{How this section dies.}
+(i) If the clock and meson bounds of the dictionary --- now inserted ---
+exclude the coefficient required at $A_{\rm DDF}\sim10^{-3}$ for every
+non-universal charge assignment, the strong version dies and the weak version
+is adopted. (ii) If the residual is shown to be exactly universal,
+Propositions A1--A2 remove the imprint outright, with the same consequence.
+(iii) If $\mu_w$ itself vanishes (\S\,failure conditions), the dictionary has
+no object to judge. \textbf{(iv) If the two-jaw window is empty at the
+couplings $\eta_B$ requires --- either because the $\varepsilon^2$ mixing
+contribution exceeds the D0 bound, or because the decay-interference ratio
+cannot reach order one without doing so --- the strong version dies, and with
+it the only surviving route of Prediction~I.} (v) If the flavor-bridge
+assumption is refuted by the operator construction of D2, the narrowing
+theorem loses its object: the $X$ operator no longer reaches
+$b\to s\mu^+\mu^-$, and Prediction~I is withdrawn regardless of the window.

@@ -1,0 +1,41 @@
+"""EXP-B v1.1 — audit du J4' : le lien (V_stab <-> k) a l'epreuve des dimensions. 03/08."""
+import numpy as np
+MPl=2.4e27  # eV (reduite, en GeV : 2.4e18)
+MPl_eV=2.4e27
+print("=== A1 : le cadran utilise dans J4' est OBSOLETE ===")
+print("  J4' emploie m_sigma < 2 meV (seuil sur le PROFIL). Le seuil corrige (J1J2_capaciteur.py,")
+print("  sur les RAPPORTS = l'observable) est m_sigma < 4,3 meV. L'ecart avec le plancher")
+print("  du radion (Lee 2020 : m_r > 5,11 meV) n'est plus un facteur 2,5-20 mais 1,2.")
+print("  MAIS ce rapprochement est un artefact, car... voir A2.\n")
+print("=== A2 : LE VRAI PROBLEME — m_r n'est PAS ~ m_sigma. Il porte 1/M_Pl. ===")
+print("  Le radion est h55 : terme cinetique PLANCKIEN. Sa masse vient de la courbure")
+print("  du potentiel effectif V_eff(R) : m_r ~ sqrt(V_stab)/M_Pl, d'ou (corpus, Part II §7) :")
+m_r=9e-3
+V14=np.sqrt(m_r*MPl_eV)
+print(f"    m_r = 9 meV  <=>  V_stab^(1/4) = sqrt(m_r.M_Pl) = {V14/1e12:.1f} TeV  ✓ (la fenetre 4-11 TeV)")
+print("  Le capaciteur, lui, vit au meV :")
+V_sig14=30e-3  # eV
+m_r_sigma=V_sig14**2/MPl_eV
+print(f"    V_sigma^(1/4) ~ 30 meV  =>  m_r(sigma) = V^(1/2)/M_Pl = {m_r_sigma:.1e} eV")
+print(f"    soit {np.log10(m_r/m_r_sigma):.0f} ORDRES sous les 9 meV requis.")
+gap=(V14/ V_sig14)**4
+print(f"    ecart en ENERGIE : (4,6 TeV / 30 meV)^4 = {gap:.0e} ~ 57 ORDRES.")
+print("  ==> LE CAPACITEUR NE PEUT PAS STABILISER R. Sa contribution a m_r est nulle en")
+print("      pratique. La table m_r(m_sigma) de J4' (valeurs ~ m_sigma, non monotones,")
+print("      sans M_Pl) utilise une formule sans la normalisation planckienne : FAUSSE.")
+print("      La 'tension m_sigma vs fenetre du radion' etait un artefact de cette formule.\n")
+print("=== A3 : la reconciliation existe, mais elle TUE le lien structurel ===")
+print("  Un vrai Goldberger-Wise : sigma avec amplitudes de brane a l'echelle TeV")
+print("  => V_stab ~ (TeV)^4 ✓. La pente reste k = g.sigma' : avec sigma' a l'echelle TeV,")
+print("  il faut un g minuscule pour retomber sur sqrt(k) = 29 meV. POSSIBLE — mais alors")
+print("  k et V_stab sont decouples par g LIBRE : le 'lien' devient une simple COMPATIBILITE.")
+print("  ==> (V_stab <-> k) : [Refute comme lien STRUCTUREL ; permis comme compatibilite].")
+print("      G5 meurt honnetement. T4b (deux origines TeV + meV) en sort RENFORCE :")
+print("      les deux secteurs sont reellement independants, meme s'ils partagent un champ.\n")
+print("=== A4 : consequence sur le GO/NO-GO etape 2 ===")
+print("  La condition du GO CONDITIONNEL de J4' ('tension resolue + lien confirme') se")
+print("  resout NEGATIVEMENT pour le lien. L'etape 2 (SUSY) ne repose donc plus que sur")
+print("  T4a (les 3 echelles TeV au coeur) = la Piste 1 du DEA, inchangee : speculative,")
+print("  coherente, [remark]. Decision propre : verdict J5' maintenant, brouillon du")
+print("  resultat POSITIF (le puits lineaire derive : capaciteur + Gauss + cadran + T0),")
+print("  et l'etape 2 PARQUEE en travail futur declare.")

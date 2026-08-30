@@ -1,0 +1,49 @@
+{
+ "motif": [
+  {
+   "construction": "LVS fibre (fibre pure)",
+   "c_b": 0.9128709291752769,
+   "forme": "sqrt(5/6)",
+   "alpha_b": 3.0276503540974917,
+   "dans_fenetre": false
+  },
+  {
+   "construction": "LVS vanille (volume global)",
+   "c_b": 1.4288690166235203,
+   "forme": "7 sqrt6/12",
+   "alpha_b": 4.739022402704309,
+   "dans_fenetre": false
+  },
+  {
+   "construction": "mur de domaine",
+   "c_b": 2.2453655975512463,
+   "forme": "11 sqrt6/12",
+   "alpha_b": 7.447035204249629,
+   "dans_fenetre": false
+  },
+  {
+   "construction": "variante w+u",
+   "c_b": 2.3574758339572237,
+   "forme": "17 sqrt13/26",
+   "alpha_b": 7.818862793566298,
+   "dans_fenetre": false
+  },
+  {
+   "construction": "source alignee sur w",
+   "c_b": 2.449489742783178,
+   "forme": "sqrt6",
+   "alpha_b": 8.124038404635959,
+   "dans_fenetre": false
+  }
+ ],
+ "fenetre": [
+  0.3,
+  0.61
+ ],
+ "theoreme_negatif": "aucun etat propre PUR ne satisfait E-11 ; il faut un melange",
+ "croisement_conditionnel": {
+  "tau_f_etoile": "sqrt(2 A V)",
+  "c_b_antisym": 0.364865746713942,
+  "c_b_sym": 1.6558601954497476
+ }
+}

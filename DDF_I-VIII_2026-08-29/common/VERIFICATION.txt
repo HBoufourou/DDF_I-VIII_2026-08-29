@@ -1,0 +1,37 @@
+ARTICLE X — NOTE DE PROGRAMME v1 (ARCHIVE, 22/08/2026)
+=======================================================
+STATUT : classee pour memoire. PAS pour publication ni depot.
+
+CE QUI EST ETABLI DANS CETTE VERSION
+------------------------------------
+1. THEOREME (audite) : la contribution de la tour sombre a la force sur le
+   mur lointain est REPULSIVE a tout R (monotonie de domaine de Dirichlet ;
+   verification 29-30/30 niveaux sans regulateur, scripts/casimir_sign_audit.py).
+   Le canal "effondrement par le Casimir de la tour" est ferme.
+   NB : le calcul initial (somme regulee e^{-0.4E}) contenait un artefact de
+   discretisation Neumann (+0.85 a R=40, ou d doit valoir 0) — corrige par
+   maillage decale ; et cette somme N'EST PAS zeta_well(-1/2), qui reste OUVERT.
+2. R ne derive pas mesurablement : dR/R = dG/G < ~1e-13/an (LLR), derive
+   integree depuis BBN < qq %. LA SERIE I-VII EST STABLE, aucune reecriture.
+3. Scenario clarifie : COLLISION DE BRANES (R->0), pas transition conforme ;
+   classe mere = ekpyrotique/cyclique (Khoury-Ovrut-Steinhardt-Turok), citee.
+   Choix structurel : collision = Bang de chaque eon, PUIS inflation fibree
+   (VI-B intact) => pas de fardeau perturbatif ekpyrotique.
+
+CE QUI RESTE OUVERT (et la methode declaree)
+--------------------------------------------
+- LA PORTE : V_eff(R) = Casimir (repulsif, signe) + barriere D8 (Art. V :
+  V_min = 1.15 V_bord a R_min = 8.34 um) + tensions -> minimum GLOBAL ou
+  METASTABLE ? Si metastable : le bulk meurt par TUNNEL, pas en roulant.
+- DEUX SORTIES a traiter : R->0 (collision) ET R->infini (decompactification,
+  instabilite generique Dine-Seiberg).
+- METHODE DECLAREE : borne de Coleman/CDL sur tau_tunnel, inconnues
+  (tau_s, p, M_rad) scannees sur des plages declarees ; trois issues
+  pre-declarees (minimum global / dormant tau >> 10^100 ans / coin court
+  qui nomme la quantite 10D decisive).
+- zeta_well(-1/2) : route Mellin (Article IX), sert II/VI/X d'un coup.
+
+SEQUENCEMENT
+------------
+Execution de la borne CDL : APRES le protocole Gaia DR4 (date dure 2/12/2026)
+et l'anteriorite |w|^2 = 6.

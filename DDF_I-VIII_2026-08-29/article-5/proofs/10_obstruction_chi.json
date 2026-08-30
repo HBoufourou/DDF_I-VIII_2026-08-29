@@ -1,0 +1,46 @@
+{
+ "obstruction_chi_Z8": {
+  "hypotheses": [
+   "CY4 elliptiquement fibre LISSE sur B3",
+   "chi = 12 c1.c2 + 360 c1^3 (Sethi-Vafa-Witten)",
+   "Riemann-Roch : chi_hol(B3) = c1.c2/24 entier => c1.c2 = 24k",
+   "c1^3 = m entier"
+  ],
+  "derivation": "chi = 12(24k) + 360m = 288k + 360m = 72(4k+5m)",
+  "conclusion": "chi doit etre divisible par 72",
+  "chi_teste": 3072,
+  "3072_mod_72": 48,
+  "divisible": false,
+  "voisines_admissibles": [
+   3024,
+   3096
+  ],
+  "24x128": 3072,
+  "verdict": "chi(Z8) = 3072 IMPOSSIBLE pour un CY4 elliptiquement fibre lisse",
+  "note_correction": "un premier enonce 'obstruction mod 3' etait FAUX (3072 divisible par 3) ; la bonne est mod 72"
+ },
+ "sourcage_B128": {
+  "E8_vers_SO16": "248 = 120 (adjoint) + 128 (spineur)",
+  "enhancement": 256,
+  "B": 128,
+  "statut": "le NOMBRE est source par la theorie des groupes ; l'IDENTIFICATION B = chi/24 ne l'est pas",
+  "nature_128": "dimension de representation",
+  "nature_chi_sur_24": "nombre de D3 (charge)"
+ },
+ "localisation_equivariante": {
+  "methode": "chi = nombre de points fixes isoles (Atiyah-Bott)",
+  "controles": {
+   "P1": 2,
+   "P2": 3,
+   "P3": 4,
+   "P1xP1": 4,
+   "P4": 5
+  },
+  "prerequis": [
+   "variete explicite",
+   "action de tore",
+   "points fixes et poids"
+  ],
+  "verdict": "SANS OBJET : Z8 n'est pas construit (pas un CICY, max 2610 < 3072)"
+ }
+}

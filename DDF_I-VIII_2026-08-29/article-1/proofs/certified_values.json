@@ -1,0 +1,32 @@
+{
+ "tower": {
+  "type": "Airy, interleaved parities",
+  "levels_meV": [
+   24.0,
+   55.1,
+   77.0,
+   96.3
+  ],
+  "ratios": [
+   2.295,
+   3.1883,
+   4.0125
+  ],
+  "epsilon_meV": 24.06,
+  "u": 4.43,
+  "ell_um": 5.81,
+  "note": "the fourth level was printed as 98.1 in an earlier draft; the interleaved spectrum gives 96.3"
+ },
+ "boundary_weight": {
+  "w1": 5.5,
+  "formula": "w1 = u |psi_1(0)|^2",
+  "alpha_b_over_cb": 3.3166
+ },
+ "declared_tension": {
+  "g_bound": "g >~ 2e3 sqrt(M5)",
+  "tHooft_fails_by_orders": 51,
+  "TeV_SUSY_fails_by_orders": 41,
+  "verdict": "cosmological-constant class",
+  "label": "[S-3]"
+ }
+}

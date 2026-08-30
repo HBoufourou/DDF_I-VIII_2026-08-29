@@ -1,0 +1,57 @@
+{
+ "structure_Z2_3": {
+  "elements": 8,
+  "non_nuls": 7,
+  "droites_somme_nulle": 7,
+  "droites": [
+   [
+    "001",
+    "010",
+    "011"
+   ],
+   [
+    "001",
+    "100",
+    "101"
+   ],
+   [
+    "001",
+    "110",
+    "111"
+   ],
+   [
+    "010",
+    "100",
+    "110"
+   ],
+   [
+    "010",
+    "101",
+    "111"
+   ],
+   [
+    "011",
+    "100",
+    "111"
+   ],
+   [
+    "011",
+    "101",
+    "110"
+   ]
+  ],
+  "intersections_entre_droites": [
+   1
+  ],
+  "elements_utilises": 7,
+  "element_jamais_utilise": "000 = identite du groupe",
+  "resolution": "la 8e etiquette est l'element neutre ; 0+b+c=0 forcerait b=c ; la question 'C1 non utilisee' SE FERME",
+  "coherence": "deux droites se coupent en 1 point => le critere |b\u2229b'| <= 1 est automatiquement satisfait"
+ },
+ "correction_critere": {
+  "enonce_errone": "compatibles si elles partagent AU PLUS 2 dimensions",
+  "consequence_si_errone": "graphe COMPLET (1540 aretes sur 1540), clique = 56 et non 7",
+  "enonce_correct": "|b\u2229b'| <= 1, decoule de ND = 6-2|b\u2229b'| >= 4",
+  "aretes_correctes": 1120
+ }
+}

@@ -1,0 +1,4 @@
+route,Tf_MeV,bw_mu_required_eV,mu_w_eV,bw_required
+threshold_at_MX,200,0.18,0.034,5.4
+Gamma_eq_H,47,0.043,0.034,1.3
+TeV_branch,200,0.18,1.4e-16,1300000000000000.0
