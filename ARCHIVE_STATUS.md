@@ -9,7 +9,7 @@
 | Result | Status | Correct use |
 |---|---|---|
 | R63 resolved Tyurin package | retained with explicit hypotheses and scope | basis of a future geometry paper |
-| R64 parity–Hodge result | conditional rational proposition for the active closed-(C_4) eigen-tube mechanism | secondary proposition or appendix only |
+| R64 parity–Hodge result | conditional rational proposition for the active closed-C4 eigen-tube mechanism | secondary proposition or appendix only |
 | R65 scalar spectral pipeline | validated on analytic/numerical controls | benchmark method for R66 |
 
 R63, R64 and R65 form one cumulative audit record. R64 and R65 do not replace
@@ -17,10 +17,10 @@ R63 by themselves.
 
 ## What is not currently derived
 
-- a physical radius (R(t));
-- an (8.2,mumathrm m) bulk thickness;
+- a physical radius R(t);
+- an 8.2 µm bulk thickness;
 - a spin-2 Kaluza–Klein spectrum on a complete compactification;
-- a globally consistent (mathcal N=1) orientifold vacuum;
+- a globally consistent N=1 orientifold vacuum;
 - dark-matter, dark-energy or baryogenesis observables;
 - seven physical charges and morphisms realizing a Fano plane;
 - a stable BPS tower with a computed protected index.
