@@ -11,8 +11,9 @@ The material below records the original *Dark Dimension Framework* programme.
 It is not silently deleted because the corrections, failed routes and changes
 of scope are part of the scientific record.
 
-The corrected programme is being reorganized in a separate repository under
-three gated branches:
+The corrected programme is maintained in
+[HBoufourou/DDF-Corrected-Geometry-Spectral-Program](https://github.com/HBoufourou/DDF-Corrected-Geometry-Spectral-Program)
+under three gated branches:
 
 - **DDF-G:** explicit resolved Tyurin geometry — strongest retained core;
 - **DDF-KK:** finite-neck scalar spectral diagnostics — validated on controls,
