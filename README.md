@@ -1,38 +1,59 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22172432.svg)](https://doi.org/10.5281/zenodo.22172432)
 
-# The Dark Dimension Framework — Consolidated Series I–VIII
+# DDF Articles I–VIII — Historical archive
 
-A mesoscopic extra dimension (8.2 µm) carrying gravity and one dark scalar,
-the Standard Model on a thin brane: Articles I–VIII of the *Cosmic Shadow
-Geometry* series, with the full reproducibility package (LaTeX sources,
-scripts, certified proofs, data, figures, anteriority dossier).
+> **Deprecated as the current scientific formulation of DDF after the R1–R65
+> adversarial audit. This repository is preserved for provenance and must not
+> be cited as a validated derivation of an 8.2 µm bulk, a physical KK tower,
+> dark matter, dark energy, baryogenesis, or a Fano-plane charge structure.**
 
-## Contents
+The material below records the original *Dark Dimension Framework* programme.
+It is not silently deleted because the corrections, failed routes and changes
+of scope are part of the scientific record.
 
-- `article-1/` … `article-8/` — the eight articles (tex, scripts, proofs, data, figures)
-- `common/` — shared preamble `ddf-common.tex`, `appendix-where.tex`, `ddf-refs.bib`
-- `anteriorite/` — dated R11 anteriority dossier (|w|² = 6) + verification script
-- `LICENSE.md` — CC-BY 4.0 (text, data) / MIT (code)
-- `MANIFEST_sha256.txt`, `FILELIST.txt`
+The corrected programme is being reorganized in a separate repository under
+three gated branches:
 
-Articles IX–X are not included: IX is reserved for the later LHCb comparison
-(running searches `Lb_baryon_lepton_spectrum_v1/v2`, benchmark window 4–6 GeV);
-X remains an internal programme note.
+- **DDF-G:** explicit resolved Tyurin geometry — strongest retained core;
+- **DDF-KK:** finite-neck scalar spectral diagnostics — validated on controls,
+  not yet tested on the real DDF geometry;
+- **DDF-BPS/physics:** conditional parent-theory and compactification work —
+  no complete physical vacuum or scale has been derived.
 
-## Cite as
+Current audit status and the disposition of Articles I–VIII are documented in
+[ARCHIVE_STATUS.md](ARCHIVE_STATUS.md). R63, R64 and R65 should be retained
+together: R63 is the strict geometry package, R64 bounds the valid
+parity–Hodge statement, and R65 validates only the diagnostic pipeline.
 
-Boufourou, H. (2026). *The Dark Dimension Framework — Consolidated Series I–VIII*
-(v1.1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.22172432
+## Historical description
 
-## Epistemic labels
+The original series proposed a mesoscopic extra dimension (8.2 µm) carrying
+gravity and one dark scalar, with the Standard Model on a thin brane, across
+Articles I–VIII of the *Cosmic Shadow Geometry* series.
 
-Every quantitative statement carries one of: [Derived], [Posited],
-[Input, natural], [Candidate], [Open, declared], or [S-3].
-Withdrawn results are recorded, not silently removed.
+Those linked physical conclusions are now classified as **not derived** by the
+corrected chain. They remain historical hypotheses that may be reconsidered
+only after new geometric and physical gates are passed.
 
-## Computational tools
+## Historical contents
 
-Carried out by the author alone, without institutional affiliation;
-general-purpose AI tools used as computational and analytical assistants.
-The author is solely responsible for all hypotheses, interpretations and
-labels. Every number is reproduced by the shipped scripts.
+- `article-1/` … `article-8/` — original article files
+- `common/` — shared LaTeX material and bibliography
+- `anteriorite/` — dated R11 anteriority dossier
+- `MANIFEST_sha256.txt`, `FILELIST.txt` — historical integrity records
+
+## Historical citation
+
+Boufourou, H. (2026). *The Dark Dimension Framework — Consolidated Series
+I–VIII* (v1.1) [Data set]. Zenodo.
+https://doi.org/10.5281/zenodo.22172432
+
+When citing this archive, state that it contains the deprecated initial
+formulation and consult `ARCHIVE_STATUS.md` for the corrected claim status.
+
+## Computational tools and responsibility
+
+The work was carried out by the author without institutional affiliation;
+general-purpose AI systems were used as computational and analytical
+assistants. The author remains responsible for all hypotheses, calculations,
+interpretations, corrections and releases.
